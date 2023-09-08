@@ -30,9 +30,9 @@ var iUp = (function () {
 function getImages(imgUrls) {
 	var indexName = "image-index";
 	var $panel = $('#panel');
-	var index = Math.floor(Math.random() * 7);
+	var index = Math.floor(Math.random() * 13);
 	var imgUrl = imgUrls[index];
-	var url = "assets/img/" + imgUrl;
+	var url = "assets/background/" + imgUrl;
 	$panel.css("background", "url('" + url + "') center center no-repeat #666");
 	$panel.css("background-size", "cover");
 	sessionStorage.setItem(indexName, index);
